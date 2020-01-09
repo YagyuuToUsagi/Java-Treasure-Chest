@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.4" fx:controller="dankesttourismprogram.SkillsController">
+   <children>
+      <TextArea editable="false" layoutX="375.0" layoutY="277.0" prefHeight="90.0" prefWidth="200.0" />
+      <TextField layoutX="125.0" layoutY="62.0" prefHeight="27.0" prefWidth="76.0" />
+      <TextField layoutX="125.0" layoutY="99.0" />
+      <Text layoutX="25.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID" />
+      <Text layoutX="50.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skill" />
+      <TableView layoutX="375.0" layoutY="62.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn maxWidth="75.0" prefWidth="75.0" text="EID" />
+            <TableColumn maxWidth="124.0" prefWidth="124.0" text="Skill" />
+         </columns>
+      </TableView>
+      <Button fx:id="searchButton" layoutX="33.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleSearchButtonAction" text="Search" />
+      <Button fx:id="addSkillButton" layoutX="32.0" layoutY="149.0" mnemonicParsing="false" onAction="#handleAddSkillButtonAction" text="Add Skill" />
+      <Button fx:id="updateButton" layoutX="107.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleUpdateButtonAction" text="Update" />
+      <Button fx:id="deleteButton" layoutX="180.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" text="Delete" />
+      <Button fx:id="searchAllButton" layoutX="252.0" layoutY="309.0" mnemonicParsing="false" onAction="#handleSearchAllButtonAction" text="Search All" />
+      <TextField layoutX="130.0" layoutY="205.0" prefHeight="27.0" prefWidth="76.0" />
+      <TextField layoutX="130.0" layoutY="242.0" />
+      <Text layoutX="30.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID" />
+      <Text layoutX="40.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Skill" />
+   </children>
+</AnchorPane>

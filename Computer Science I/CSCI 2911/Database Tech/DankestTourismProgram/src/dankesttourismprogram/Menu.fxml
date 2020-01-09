@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dankesttourismprogram.MenuController">
+    <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="528.0">
+         <children>
+            <Button fx:id="guestButton" layoutX="65.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleGuestButtonAction" prefHeight="68.0" prefWidth="125.0" text="Guest" />
+            <Button fx:id="employeeButton" layoutX="203.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleEmployeeButtonAction" prefHeight="68.0" prefWidth="125.0" text="Employee" />
+            <Button fx:id="locTVButton" layoutX="202.0" layoutY="257.0" mnemonicParsing="false" onAction="#handlelocTVButtonAction" prefHeight="68.0" prefWidth="125.0" text="Locations to Visit" />
+            <Button fx:id="landmarksButton" layoutX="337.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleLandmarksButtonAction" prefHeight="68.0" prefWidth="125.0" text="Landmarks" />
+            <Button fx:id="companyButton" layoutX="66.0" layoutY="177.0" mnemonicParsing="false" onAction="#handleCompanyButtonAction" prefHeight="68.0" prefWidth="125.0" text="Company" />
+            <Button fx:id="skillButton" layoutX="337.0" layoutY="176.0" mnemonicParsing="false" onAction="#handleSkillButtonAction" prefHeight="68.0" prefWidth="125.0" text="Skills" />
+            <Button fx:id="avoidButton" layoutX="201.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleAvoidButtonAction" prefHeight="68.0" prefWidth="125.0" text="Places to Avoid" />
+            <ImageView fx:id="logoImage" fitHeight="150.0" fitWidth="397.0" layoutX="65.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Logo/Logo.png" />
+               </image>
+            </ImageView>
+            
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
